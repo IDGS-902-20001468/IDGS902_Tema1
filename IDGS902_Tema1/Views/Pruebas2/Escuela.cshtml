@@ -1,0 +1,32 @@
+﻿@model IDGS902_Tema1.Models.Alumnos
+
+@{
+    ViewBag.Title = "Escuela";
+}
+
+<h2>Escuela</h2>
+
+<div class="form-group">
+    @Html.LabelFor(model => model.Nombre)
+    @Html.DisplayFor(model => model.Nombre)
+</div>
+
+<div class="form-group">
+    @Html.LabelFor(model => model.Edad)
+    @Html.DisplayFor(model => model.Edad)
+</div>
+
+<div class="form-group">
+    @Html.LabelFor(model => model.Email)
+    @Html.DisplayFor(model => model.Email)
+</div>
+
+<div class="form-group">
+    @Html.LabelFor(model => model.Activo)
+    @Html.DisplayFor(model => model.Activo)
+</div>
+
+<div class="form-group">
+    @Html.LabelFor(model => model.Inscripcion)
+    @Html.DisplayFor(model => model.Inscripcion)
+</div>

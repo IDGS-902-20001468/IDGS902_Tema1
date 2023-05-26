@@ -1,0 +1,3 @@
+rojo, red
+Libro, Book
+Comer, eat

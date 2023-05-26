@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "Actividad Cajas";
+}
+
+<h2>ActividadCaja</h2>
+@if (Convert.ToInt16(ViewBag.NumCajas) == 0)
+{
+<form action="/" method="post">
+    <label>Cuantos numeros ingresaras: </label>
+    <input type="number" name="numCajas" value="" />
+    <br />
+    <input type="submit" name="name" value="Mostrar" />
+
+</form>
+}
+else
+{
+<form action="Pruebas2/Resultado" method="post">
+    @for (int i = 0; i < Convert.ToInt16(ViewBag.NumCajas); i++)
+    {
+        <br />
+        <label>Numero: </label>
+        <input type="text" name="a" />
+        <br />
+    }
+    <br />
+    <input type="hidden" name="caj" value="@ViewBag.NumCajas" />
+    <input type="submit" name="name" value="Calcular" />
+</form>
+}

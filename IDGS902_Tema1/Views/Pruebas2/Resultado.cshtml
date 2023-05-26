@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Actividad Cajas Resultado";
+}
+
+<h2>Resultado</h2>
+<h2>Suma: @ViewBag.suma</h2>
+@if (ViewBag.numeros != null)
+{
+    <h3>Los numeros repetidos son:</h3>
+    <ul>
+        @foreach (var numero in ViewBag.numeros)
+        {
+            <h4>@numero</h4>
+        }
+    </ul>
+}
+
